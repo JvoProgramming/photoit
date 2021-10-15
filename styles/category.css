@@ -46,7 +46,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s;
     border-radius: 12px;
 }

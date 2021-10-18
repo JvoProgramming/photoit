@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
 }
 
@@ -39,8 +39,8 @@ body {
     right: 10px;
     bottom: 10px;
     height: 90px;
-    background: rgba(0,0,0,0.4);
-    display:flex;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -84,7 +84,7 @@ body {
 }
 
 .box:before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     left: -2px;
@@ -110,18 +110,17 @@ body {
 
 .box:nth-child(3n):before,
 .box:nth-child(3n):after {
-    background:linear-gradient(235deg, #CD7F32, #010615, #CD7F32);;
-    
+    background: linear-gradient(235deg, #cd7f32, #010615, #cd7f32);
 }
 
-.box:nth-child(3n+1):before,
-.box:nth-child(3n+1):after {
-    background:linear-gradient(235deg, 	#FFD700, #010615, 	#FFD700);
+.box:nth-child(3n + 1):before,
+.box:nth-child(3n + 1):after {
+    background: linear-gradient(235deg, #ffd700, #010615, #ffd700);
 }
 
-.box:nth-child(3n+2):before,
-.box:nth-child(3n+2):after {
-    background:linear-gradient(235deg, #C0C0C0, #010615, #C0C0C0);
+.box:nth-child(3n + 2):before,
+.box:nth-child(3n + 2):after {
+    background: linear-gradient(235deg, #c0c0c0, #010615, #c0c0c0);
 }
 
 img:hover {
@@ -135,7 +134,7 @@ img:hover {
 }
 
 .nav-area li a:hover {
-    color: #75849d
+    color: #75849d;
 }
 
 #navbar {
@@ -146,14 +145,14 @@ img:hover {
     margin: auto;
     margin-bottom: 50px;
     width: 50%;
-    text-align:center;
+    text-align: center;
 }
 
 .user_info p {
     color: white;
 }
 
-#container{
+#container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -162,22 +161,22 @@ img:hover {
     width: 100%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     * {
-        font-size: .95rem;
+        font-size: 0.95rem;
     }
     header img {
         width: 100px;
         height: 100px;
     }
     .btn-area {
-        font-size: .95rem;
+        font-size: 0.95rem;
         padding: 5px 20px;
     }
     .box .content {
         opacity: 1;
     }
-    .box .imgBox img{
+    .box .imgBox img {
         opacity: 1;
     }
 }

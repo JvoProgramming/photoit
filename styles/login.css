@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
 }
 
 a {
     text-decoration: none;
 }
-    
+
 .btnSubmit {
     padding: 10px 30px;
     cursor: pointer;
@@ -21,17 +21,17 @@ a {
     outline: none;
     border-radius: 10px;
     margin-top: 10px;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .btnToggle {
     padding: 10px 30px;
-    cursor:pointer;
-    background:transparent;
+    cursor: pointer;
+    background: transparent;
     border: 0;
     outline: none;
     position: relative;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 #divBody {
@@ -63,11 +63,11 @@ a {
     height: 100%;
     background: linear-gradient(to right, #3f63cc, #fa0bf3);
     border-radius: 15px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 #divLogReg {
-    opacity: .90;
+    opacity: 0.9;
     max-width: 350px;
     max-height: 450px;
     position: relative;
@@ -82,7 +82,7 @@ a {
 
 #divNavBar {
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
 }
 
 .inputField {
@@ -95,30 +95,26 @@ a {
     border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 #logo {
     cursor: pointer;
 }
 
-#divNavBar {
-    list-style: none;
-}
-
-#divNavBar li {
+#divNavBar #nav-bar li {
     display: inline-block;
     padding: 0 15px;
     text-transform: uppercase;
 }
 
 #divNavBar li a {
-    transition: .3s;
+    transition: 0.3s;
     color: #fff;
 }
 
 #divNavBar li a:hover {
-    color: #75849d
+    color: #75849d;
 }
 
 .pErrors {
@@ -126,30 +122,31 @@ a {
     color: red;
 }
 
-.checkBox{
-    font-size: .8rem;
+.checkBox {
+    font-size: 0.8rem;
 }
 
-text{
-    font-size: .8rem;
+text {
+    font-size: 0.8rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     * {
-        font-size: .95rem;
+        font-size: 0.95rem;
     }
     header img {
         width: 100px;
         height: 100px;
     }
     .btn-area {
-        font-size: .95rem;
+        font-size: 0.95rem;
         padding: 5px 20px;
     }
 
-    @media screen and (max-width: 440px){
-        #divLogReg{
+    @media screen and (max-width: 440px) {
+        #divLogReg {
             margin-left: 30px;
             margin-right: 30px;
         }
-    }}
+    }
+}

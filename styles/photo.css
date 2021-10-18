@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
 }
-
-
 
 #appreciatedMessage {
     color: red;
@@ -36,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     transition: 0.5s;
     padding: 10px;
     border-radius: 12px;
@@ -46,8 +44,8 @@ body {
     position: absolute;
     bottom: 10px;
     width: 280px;
-    background: rgba(0,0,0,0.4);
-    display:flex;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -97,19 +95,19 @@ body {
     opacity: 1;
 }
 
-.box:nth-child(3n+1):before,
-.box:nth-child(3n+1):after {
-    background:linear-gradient(235deg, #f560f5, #010615, #56b3ff);
+.box:nth-child(3n + 1):before,
+.box:nth-child(3n + 1):after {
+    background: linear-gradient(235deg, #f560f5, #010615, #56b3ff);
 }
 
 .category_info {
-    text-align:center;
+    text-align: center;
 }
 
 .comment {
     color: white;
-    padding:5px;
-    font-size: .9rem;
+    padding: 5px;
+    font-size: 0.9rem;
     outline: solid;
     outline-width: thin;
     outline-color: #414957;
@@ -138,13 +136,13 @@ body {
     width: 125px;
     border: none;
     outline: solid;
-    outline-width: .15rem;
+    outline-width: 0.15rem;
     outline-color: #4b5464;
 }
 
 #likeBtn {
     cursor: pointer;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .logo {
@@ -159,7 +157,7 @@ body {
 }
 
 .nav-area li a:hover {
-    color: #75849d
+    color: #75849d;
 }
 
 #navbar {
@@ -171,7 +169,7 @@ body {
 #photoContainer {
     margin: 0 auto;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 75px;
@@ -179,27 +177,27 @@ body {
 }
 
 #textBox {
-    color:white;
+    color: white;
     padding: 5px;
 }
 
 #textContainer {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 #userImg:hover {
     cursor: default;
 }
 
-.content #caption{
+.content #caption {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
-.content #caption span{
-    font-size: .8rem;
+.content #caption span {
+    font-size: 0.8rem;
 }
 
 #commentBtn {
@@ -209,71 +207,71 @@ body {
     background-color: rgba(117, 132, 157, 1);
     color: white;
     padding: 2px;
-    font-size: .9rem;
+    font-size: 0.9rem;
     border-style: solid;
     background: #75849d;
     border: none;
     outline: solid;
-    outline-width: .15rem;
+    outline-width: 0.15rem;
     outline-color: #4b5464;
 }
 
-#commentName{
-    font-size: .8rem;
+#commentName {
+    font-size: 0.8rem;
 }
 
-.leftContainer{
+.leftContainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
 
-.appreciatedContainer{
+.appreciatedContainer {
     display: flex;
     width: 100%;
     margin: 0 auto;
     justify-content: space-between;
 }
 
-#userMessage{
+#userMessage {
     border-radius: 6px;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     * {
-        font-size: .95rem;
+        font-size: 0.95rem;
     }
     header img {
         width: 100px;
         height: 100px;
     }
     .btn-area {
-        font-size: .95rem;
+        font-size: 0.95rem;
         padding: 5px 20px;
     }
-    #photoContainer{
+    #photoContainer {
         flex-direction: column;
         align-items: center;
     }
-    .appreciatedContainer{
+    .appreciatedContainer {
         justify-content: space-around;
     }
-    .comments{
+    .comments {
         max-width: 100%;
     }
-    .box .imgBox img{
+    .box .imgBox img {
         opacity: 1;
     }
 }
 
-@media screen and (max-width: 457px){
-    #commentBtn{
+@media screen and (max-width: 457px) {
+    #commentBtn {
         bottom: 0%;
     }
-    #textBox{
-        display:flex;
+    #textBox {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 5px;

@@ -1,8 +1,10 @@
 var userStateBtn;
+var mobileUserStateBtn;
 var loggedIn;
 
 window.onload = function () {
     userStateBtn = document.getElementById("userStateBtn");
+    mobileUserStateBtn = document.getElementById("mobileUserStateBtn");
 
     // check if there is a parameter in the url. If so, we are visiting another user's profile
     const queryString = window.location.search;
@@ -51,12 +53,14 @@ function getUserAuthentication() {
                 console.log("user signed in");
                 user_infoDiv.style.display = "flex";
                 userStateBtn.innerHTML = "Sign Out";
+                mobileUserStateBtn.innerHTML = "Sign Out";
                 loggedIn = true;
 
                 getUserInfo(result);
             } else {
                 console.log("user not signed in");
                 userStateBtn.innerHTML = "Login";
+                mobileUserStateBtn.innerHTML = "Login";
                 loggedIn = false;
 
                 user_infoDiv.innerHTML =
@@ -69,6 +73,7 @@ function getUserAuthentication() {
 function userState() {
     if (loggedIn) {
         userStateBtn.innerHTML = "Login";
+        mobileUserStateBtn.innerHTML = "Login";
 
         // sign out the user
         var xhttp = new XMLHttpRequest();

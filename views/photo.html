@@ -1,60 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PhotoIT - Homepage</title>
-    <link rel="stylesheet" type="text/css" href="../styles/globalStyles.css">
-    <link rel="stylesheet" type="text/css" href="../styles/photo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../scripts/userAuth.js"></script>
-    <script src="../scripts/photo.js"></script>
-</head>
-<body>
-    <div id="navbar">
-        <header nav-bar>
-            <a href="../views/home.html"> <img src="../photos/PhotoIt_Logo.png" alt="" class="logo"></a>
-            <nav>
-                <ul class="nav-area">
-                    <li><a href="../views/home.html">Home</a></li>
-                    <li><a href="../views/search.html">Search</a></li>
-                    <li><a href="../views/user.html">Profile</a></li>
-                    <li><a href="../views/appreciated.html">Appreciated</a></li>
-                    <li><a href="../views/upload.html">Upload</a></li>
-                </ul>
-            </nav>
-            <button id="userStateBtn" class="btn-area" onclick="userState()">Login</button>
-        </header>
-    </div>
-    <div id="photoContainer">
-        <div class="leftContainer">
-            <div class="box">
-                <div class ="imgBox">
-                    <img id="userImg">
-                </div>
-                <div class="content">
-                    <h2 id="caption"></h2>
-                </div>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>PhotoIT - Homepage</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../styles/globalStyles.css"
+        />
+        <link rel="stylesheet" type="text/css" href="../styles/photo.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../scripts/userAuth.js"></script>
+        <script src="../scripts/photo.js"></script>
+        <script src="../scripts/mobileNav.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <header id="nav-bar">
+                <a href="../views/home.html">
+                    <img src="../photos/PhotoIt_Logo.png" alt="" class="logo"
+                /></a>
+                <nav>
+                    <ul class="nav-area">
+                        <li><a href="../views/home.html">Home</a></li>
+                        <li><a href="../views/search.html">Search</a></li>
+                        <li><a href="../views/user.html">Profile</a></li>
+                        <li>
+                            <a href="../views/appreciated.html">Appreciated</a>
+                        </li>
+                        <li><a href="../views/upload.html">Upload</a></li>
+                    </ul>
+                </nav>
+                <button
+                    id="userStateBtn"
+                    class="btn-area"
+                    onclick="userState()"
+                >
+                    Login
+                </button>
+            </header>
+            <div class="mobile-nav-bar">
+                <nav>
+                    <div class="burger-container">
+                        <img src="../photos/PhotoIt_Logo.png" />
+                        <p>photoIT</p>
+                        <a class="burger-nav"></a>
+                    </div>
+                    <ul>
+                        <li><a href="../views/home.html">Home</a></li>
+                        <li><a href="../views/search.html">Search</a></li>
+                        <li><a href="../views/user.html">Profile</a></li>
+                        <li>
+                            <a href="../views/appreciated.html">Appreciated</a>
+                        </li>
+                        <li><a href="../views/upload.html">Upload</a></li>
+                        <li><a>Login</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="appreciatedContainer">
-                <button id="likeBtn" class="like" type="button" onclick="postLike()">Appreciate</button>
-                <span id="likes" style="color:white;"></span>
-            </div>
-            <div id="appreciatedMessage"></div>
         </div>
-        <div id="commentBox">
-            <div id="commentContainer">
-                <div class="comments" id="commentList">
+        <div id="photoContainer">
+            <div class="leftContainer">
+                <div class="box">
+                    <div class="imgBox">
+                        <img id="userImg" />
+                    </div>
+                    <div class="content">
+                        <h2 id="caption"></h2>
+                    </div>
                 </div>
+                <div class="appreciatedContainer">
+                    <button
+                        id="likeBtn"
+                        class="like"
+                        type="button"
+                        onclick="postLike()"
+                    >
+                        Appreciate
+                    </button>
+                    <span id="likes" style="color: white"></span>
+                </div>
+                <div id="appreciatedMessage"></div>
             </div>
-            <div id="textContainer">
-                <div id="textBox">
-                    <textarea id="userMessage" rows="1" cols="50"> </textarea>
-                    <button id="commentBtn" type="button" onclick="postComment()"> Post </button>
-                    <p> <b id="commentName"> </b> <span id="username"> </span> </p>
-                    <p id="commentFeedback"></p>
+            <div id="commentBox">
+                <div id="commentContainer">
+                    <div class="comments" id="commentList"></div>
+                </div>
+                <div id="textContainer">
+                    <div id="textBox">
+                        <textarea id="userMessage" rows="1" cols="50">
+                        </textarea>
+                        <button
+                            id="commentBtn"
+                            type="button"
+                            onclick="postComment()"
+                        >
+                            Post
+                        </button>
+                        <p>
+                            <b id="commentName"> </b>
+                            <span id="username"> </span>
+                        </p>
+                        <p id="commentFeedback"></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PhotoIT - Homepage</title>
-    <link rel="stylesheet" type="text/css" href="../styles/globalStyles.css">
-    <link rel="stylesheet" type="text/css" href="../styles/search.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../scripts/userAuth.js"></script>
-    <script src="../scripts/search.js"></script>
-</head>
-<body>
-    <div id="navbar">
-        <header nav-bar>
-            <a href="../views/home.html"> <img src="../photos/PhotoIt_Logo.png" alt=""></a>
-            <nav>
-                <ul class="nav-area">
-                    <li><a href="../views/home.html">Home</a></li>
-                    <li><a href="../views/search.html">Search</a></li>
-                    <li><a href="../views/user.html">Profile</a></li>
-                    <li><a href="../views/appreciated.html">Appreciated</a></li>
-                    <li><a href="../views/upload.html">Upload</a></li>
-                </ul>
-            </nav>
-            <button id="userStateBtn" class="btn-area" onclick="userState()">Login</button>
-        </header>
-        <div class="search">
-            <b style="color:white;">SEARCH USER</b>
-            <div class="textBox">
-                <input id="searchID" type="text">
-                <input id="submitBtn" type="submit" onclick="getUser()">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>PhotoIT - Homepage</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../styles/globalStyles.css"
+        />
+        <link rel="stylesheet" type="text/css" href="../styles/search.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../scripts/userAuth.js"></script>
+        <script src="../scripts/search.js"></script>
+        <script src="../scripts/mobileNav.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <header id="nav-bar">
+                <a href="../views/home.html">
+                    <img src="../photos/PhotoIt_Logo.png" alt=""
+                /></a>
+                <nav>
+                    <ul class="nav-area">
+                        <li><a href="../views/home.html">Home</a></li>
+                        <li><a href="../views/search.html">Search</a></li>
+                        <li><a href="../views/user.html">Profile</a></li>
+                        <li>
+                            <a href="../views/appreciated.html">Appreciated</a>
+                        </li>
+                        <li><a href="../views/upload.html">Upload</a></li>
+                    </ul>
+                </nav>
+                <button
+                    id="userStateBtn"
+                    class="btn-area"
+                    onclick="userState()"
+                >
+                    Login
+                </button>
+            </header>
+            <div class="mobile-nav-bar">
+                <nav>
+                    <div class="burger-container">
+                        <img src="../photos/PhotoIt_Logo.png" />
+                        <p>photoIT</p>
+                        <a class="burger-nav"></a>
+                    </div>
+                    <ul>
+                        <li><a href="../views/home.html">Home</a></li>
+                        <li><a href="../views/search.html">Search</a></li>
+                        <li><a href="../views/user.html">Profile</a></li>
+                        <li>
+                            <a href="../views/appreciated.html">Appreciated</a>
+                        </li>
+                        <li><a href="../views/upload.html">Upload</a></li>
+                        <li><a>Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search">
+                <b style="color: white">SEARCH USER</b>
+                <div class="textBox">
+                    <input id="searchID" type="text" />
+                    <input id="submitBtn" type="submit" onclick="getUser()" />
+                </div>
             </div>
         </div>
-    </div>
-    <div id="foundUser">
-    </div>
-</body>
+        <div id="foundUser"></div>
+    </body>
 </html>

@@ -51,6 +51,6 @@ function getTopUser()
             }
         }
     };
-    xhttp.open("GET", "https://photoit110.herokuapp.com/getMostLike", true); 
+    xhttp.open("GET", "https://server-snowy-smoke-8305.fly.dev/getMostLike", true); 
     xhttp.send(); 
 }

@@ -35,7 +35,7 @@ function getUserAuthentication() {
     var xhttp = new XMLHttpRequest();
     xhttp.open(
         "GET",
-        "https://photoit110.herokuapp.com/GetUserAuthentication",
+        "https://server-snowy-smoke-8305.fly.dev/GetUserAuthentication",
         true
     );
     xhttp.setRequestHeader("Content-Type", "application/json");
@@ -77,7 +77,7 @@ function userState() {
 
         // sign out the user
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://photoit110.herokuapp.com/SignOut", true);
+        xhttp.open("POST", "https://server-snowy-smoke-8305.fly.dev/SignOut", true);
         xhttp.setRequestHeader("Content-Type", "application/json");
         xhttp.send();
 
@@ -159,7 +159,7 @@ function getUserID(userUsername) {
 
     xhttp.open(
         "GET",
-        "https://photoit110.herokuapp.com/GetUserID" + params,
+        "https://server-snowy-smoke-8305.fly.dev/GetUserID" + params,
         true
     );
     xhttp.setRequestHeader("Content-Type", "application/json");
@@ -197,7 +197,7 @@ function getUserInfo(userIDUser) {
 
     xhttp.open(
         "GET",
-        "https://photoit110.herokuapp.com/GetUserInfo" + params,
+        "https://server-snowy-smoke-8305.fly.dev/GetUserInfo" + params,
         true
     );
     xhttp.setRequestHeader("Content-Type", "application/json");
@@ -258,7 +258,7 @@ function getUsersPosts(usernameUser) {
     var params = "?username=" + usernameUser;
     xhttp.open(
         "GET",
-        "https://photoit110.herokuapp.com/GetUsersPosts" + params,
+        "https://server-snowy-smoke-8305.fly.dev/GetUsersPosts" + params,
         true
     );
     xhttp.setRequestHeader("Content-Type", "application/json");
@@ -293,7 +293,7 @@ function postChangeAvatar(imageURLUser) {
             }
         }
     };
-    xhttp.open("POST", "https://photoit110.herokuapp.com/PostUserAvatar", true);
+    xhttp.open("POST", "https://server-snowy-smoke-8305.fly.dev/PostUserAvatar", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
 
     var data = { imageURL: imageURLUser };

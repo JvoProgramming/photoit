@@ -58,7 +58,7 @@ function getUser() {
     };
 
     var params = "?" + "username=" + usernameSearch;
-    xhttp.open("GET", "https://photoit110.herokuapp.com/searchDataBase" + params, true);
+    xhttp.open("GET", "https://server-snowy-smoke-8305.fly.dev/searchDataBase" + params, true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     
     xhttp.send();

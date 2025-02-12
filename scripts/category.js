@@ -59,7 +59,7 @@ function getCategoryPosts() {
     };
 
     var params = "?" + "category=" + categoryUser + "&filter=" + filterUser; 
-    xhttp.open("GET", "https://photoit110.herokuapp.com/GetCategoryPosts" + params, true); 
+    xhttp.open("GET", "https://server-snowy-smoke-8305.fly.dev/GetCategoryPosts" + params, true); 
     xhttp.send();
 
 }

@@ -22,7 +22,7 @@ firebase.initializeApp({
 
 // create server
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 // add stuff to server
 app.use(express.json());

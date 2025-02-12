@@ -44,7 +44,7 @@ function getPost(postIDUser) {
         }
     };
     var params = "?postID=" + postIDUser;
-    xhttp.open("GET", "https://photoit110.herokuapp.com/GetPost" + params, true);
+    xhttp.open("GET", "https://server-snowy-smoke-8305.fly.dev/GetPost" + params, true);
     
     xhttp.send();
 }
@@ -87,7 +87,7 @@ function postComment() {
                 }
             }
         };
-        xhttp.open("POST", "https://photoit110.herokuapp.com/PostComments", true);
+        xhttp.open("POST", "https://server-snowy-smoke-8305.fly.dev/PostComments", true);
         xhttp.setRequestHeader("Content-Type", "application/json");
         
         var data = {postID: postIDUser, content: contentUser};
@@ -117,7 +117,7 @@ function getUsername() {
 
         }
     };
-    xhttp.open("GET", "https://photoit110.herokuapp.com/GetUsername", true);
+    xhttp.open("GET", "https://server-snowy-smoke-8305.fly.dev/GetUsername", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     
     xhttp.send();
@@ -148,7 +148,7 @@ function postLike() {
             }
         }
     };
-    xhttp.open("POST", "https://photoit110.herokuapp.com/PostLike", true);
+    xhttp.open("POST", "https://server-snowy-smoke-8305.fly.dev/PostLike", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     
     var data = {postID: postIDUser, postUsername: postUsernameUser};

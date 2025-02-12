@@ -17,7 +17,7 @@ var firebaseConfig = {
     messagingSenderId: "17838263350",
     appId: "1:17838263350:web:b780ca82fda263eb549c97",
     measurementId: "G-VC0GJ2GXLT",
-};
+  };
 
 firebase.initializeApp(firebaseConfig);
 
@@ -40,7 +40,7 @@ function getUserAuthentication() {
     var xhttp = new XMLHttpRequest();
     xhttp.open(
         "GET",
-        "https://photoit110.herokuapp.com/GetUserAuthentication",
+        "https://server-snowy-smoke-8305.fly.dev/GetUserAuthentication",
         true
     );
     xhttp.setRequestHeader("Content-Type", "application/json");
@@ -117,7 +117,7 @@ function userState() {
 
         // sign out the user
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://photoit110.herokuapp.com/SignOut", true);
+        xhttp.open("POST", "https://server-snowy-smoke-8305.fly.dev/SignOut", true);
         xhttp.setRequestHeader("Content-Type", "application/json");
         xhttp.send();
 
@@ -195,7 +195,7 @@ function postCreatePost(captionUser, imageURLUser, categoryUser) {
             }
         }
     };
-    xhttp.open("POST", "https://photoit110.herokuapp.com/CreatePost", true);
+    xhttp.open("POST", "https://server-snowy-smoke-8305.fly.dev/CreatePost", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
 
     var data = {

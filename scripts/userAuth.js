@@ -12,7 +12,7 @@ function getUserAuthentication() {
     var xhttp = new XMLHttpRequest();
     xhttp.open(
         "GET",
-        "https://photoit110.herokuapp.com/GetUserAuthentication",
+        "https://server-snowy-smoke-8305.fly.dev/GetUserAuthentication",
         true
     );
     xhttp.setRequestHeader("Content-Type", "application/json");
@@ -45,7 +45,7 @@ function userState() {
         mobileUserStateBtn.innerHTML = "Login";
         // sign out the user
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://photoit110.herokuapp.com/SignOut", true);
+        xhttp.open("POST", "https://server-snowy-smoke-8305.fly.dev/SignOut", true);
         xhttp.setRequestHeader("Content-Type", "application/json");
         xhttp.send();
 

@@ -8,15 +8,15 @@ window.onload = function () {
     getUserAuthentication();
 };
 
-var firebaseConfig = {
-    apiKey: "AIzaSyCOetUOyMKkAt_P_9xUWkcRB8J5ernXM10",
-    authDomain: "photoit110.firebaseapp.com",
-    databaseURL: "https://photoit110-default-rtdb.firebaseio.com",
-    projectId: "photoit110",
-    storageBucket: "photoit110.appspot.com",
-    messagingSenderId: "17838263350",
-    appId: "1:17838263350:web:b780ca82fda263eb549c97",
-    measurementId: "G-VC0GJ2GXLT",
+const firebaseConfig = {
+    apiKey: "AIzaSyD0xEM1KZAsjST9GwQs1sxBu2zhGXHOfDk",
+    authDomain: "photoit-jvo.firebaseapp.com",
+    databaseURL: "https://photoit-jvo-default-rtdb.firebaseio.com",
+    projectId: "photoit-jvo",
+    storageBucket: "photoit-jvo.firebasestorage.app",
+    messagingSenderId: "136578612415",
+    appId: "1:136578612415:web:1a3762ca08598ab8d65a0a",
+    measurementId: "G-LF8C9QZZ61"
   };
 
 firebase.initializeApp(firebaseConfig);

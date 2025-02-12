@@ -2,7 +2,6 @@
 var firebase = require('firebase/app');
   require('firebase/auth');
   require('firebase/database');
-const sorting = require('../sorting.js');
 
 ///////////////////////////////////////////////////////////////////////// get functions
 

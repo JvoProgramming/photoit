@@ -64,4 +64,4 @@ app.post('/PostLike', postsHandler.postLike);
 app.post('/PostUserAvatar', userHandler.postUserAvatar);
 
 // start listening on server
-app.listen(port, () => console.log(`Server listening on http://localhost:${port}`));
+app.listen(3000, () => console.log(`Server listening on http://localhost:${port}`));

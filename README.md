@@ -3,7 +3,7 @@ Website: https://photoit.netlify.app
 ## Developers
 ---
 * **Back-End Developer:** &nbsp; Sergio Inzunza
-* **Front-End Developer:** &nbsp; Johnny Vo
+* **Full Stack Developer:** &nbsp; Johnny Vo
 * **Back-End Developer:** &nbsp; Ernie Hung
 ---
 # PhotoIt
